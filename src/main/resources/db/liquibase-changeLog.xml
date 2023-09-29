@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+        <changeSet author="Viktoriia" id="190920231800">
+                <sqlFile path="scripts/init/001_create_schema_delivery.sql" relativeToChangelogFile="true"/>
+                <sqlFile path="scripts/init/002_ddl_create_customer_table.sql" relativeToChangelogFile="true"/>
+                <sqlFile path="scripts/init/003_ddl_create_status_order_table.sql" relativeToChangelogFile="true"/>
+                <sqlFile path="scripts/init/004_ddl_create_orders_table.sql" relativeToChangelogFile="true"/>
+                <sqlFile path="scripts/init/005_ddl_create_category_table.sql" relativeToChangelogFile="true"/>
+                <sqlFile path="scripts/init/006_ddl_create_card_table.sql" relativeToChangelogFile="true"/>
+                <sqlFile path="scripts/init/007_ddl_create_dish_table.sql" relativeToChangelogFile="true"/>
+                <sqlFile path="scripts/init/008_ddl_create_order_dish_table.sql" relativeToChangelogFile="true"/>
+                <sqlFile path="scripts/010_dml_insert_status.sql" relativeToChangelogFile="true"/>
+                <sqlFile path="scripts/011_dml_insert_dish.sql" relativeToChangelogFile="true"/>
+                <sqlFile path="scripts/012_dml_insert_for_test_customer.sql" relativeToChangelogFile="true"/>
+                <sqlFile path="scripts/013_dml_insert_for_test_card.sql" relativeToChangelogFile="true"/>
+        </changeSet>
+</databaseChangeLog>
